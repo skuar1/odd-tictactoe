@@ -48,6 +48,7 @@ function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className={style.gameInfo}>
+        <h3>Últimos movimentos</h3>
         <ol>{moves}</ol>
       </div>
     </div>

@@ -14,8 +14,8 @@
     padding: 0;
     text-align: center;
 
-    transition: all 0.25s;
+    transition: all 0.30s;
   }
 .square:hover{
-    background-color: rgb(201, 80, 140);
+    filter: grayscale(22%);
 }
