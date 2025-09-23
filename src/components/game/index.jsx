@@ -1,5 +1,6 @@
 import Board from "../board/index.jsx";
-import { useState } from 'react'
+import { useState } from 'react';
+import style from './Game.module.css';
 
 //função que executa a lógica do jogo
 function Game() {
@@ -42,11 +43,11 @@ function Game() {
 
   return (
     //html do board e do histórico
-    <div className="game">
-      <div className="game-board">
+    <div className={style.game}>
+      <div className={style.boardRow}>
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
-      <div className="game-info">
+      <div className={style.gameInfo}>
         <ol>{moves}</ol>
       </div>
     </div>
